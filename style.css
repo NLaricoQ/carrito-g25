@@ -16,8 +16,7 @@
 }
 body {
   font-family: 'Lobster', cursive;
-  /* background: linear-gradient(rgba(0,0,0,.3),rgba(243,17,224,.3)), url(https://www.coliseugeek.com.br/wp-content/uploads/2023/01/59f27-clickwallpapers-demonslayerkimetsunoyaiba-anime-4k-img1-scaled.jpg) center #505050; */
-  background: linear-gradient(rgba(0,0,0,.3),rgba(243,17,224,.3)), url(https://i.pinimg.com/originals/0c/6e/11/0c6e115ab4fa93c88121afca729fae08.gif) center #505050;
+  background: linear-gradient(rgba(0,0,0,.3),rgba(243,17,224,.3)), url(https://cdna.artstation.com/p/assets/images/images/054/598/180/original/a-s-o-809b796f-bb35-4798-a9e2-7c50a76f868d-mid-no-eyes-movement.gif?1664906545) center #505050;
   background-size: cover;
 }
 
@@ -78,10 +77,12 @@ header img {
   background: linear-gradient(rgba(0,0,0,.3),rgba(243,17,224,.3)), url(https://aniyuki.com/wp-content/uploads/2021/06/aniyuki-gif-demon-slayer-38.gif) center #505050;
   background-size: cover;
 }
-
+.product__container__description{
+  display: none;
+}
 .nav__car__visible {
   left: 60%;
-  background: linear-gradient(rgba(0,0,0,.3),rgba(243,17,224,.3)), url(https://w0.peakpx.com/wallpaper/407/869/HD-wallpaper-thunder-struck-beach-lightning-nature-paper-storm-strike-wall.jpg) center #505050;
+  background: linear-gradient(rgba(0,0,0,.3),rgba(243,17,224,.3)), url(https://aniyuki.com/wp-content/uploads/2021/06/aniyuki-gif-demon-slayer-38.gif) center #505050;
   background-size: cover;
 }
 main h3 {
@@ -90,6 +91,26 @@ main h3 {
   font-size: 26px;
   color: var(--rgb);
   padding-top: 40px;
+}
+
+.whatsapp-icon {
+  display: flex;
+  position: fixed;
+  z-index: 11;
+  background-color: green;
+  height: 65px;
+  width: 65px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  right: 2%;
+  bottom: 20%;
+  cursor: pointer;
+  
+}
+.whatsapp-icon i {
+  font-size: 45px;
+  color: var(--blanco1);
 }
 .principal__container {
   display: flex;
@@ -115,9 +136,11 @@ main h3 {
 }
 .product__container__name p {
   width: 200px;
+  height: 20px;
   padding-left: 20px;
   font-size: 18px;
   color: var(--rgb);
+  text-align: center;
 }
 .product__container__price {
   margin-bottom: 20px;
@@ -128,15 +151,19 @@ main h3 {
   font-size: 20px;
   font-weight: bold;
   padding-right: 20px;
+  color: var(--rgb);
 }
 .product__container__button {
   padding-left: 20px;
   margin-bottom: 20px;
   display: flex;
-  justify-content: space-between;  
+  justify-content: space-between; 
+  
 }
-.product__container__button p{
+.product__container__button :nth-child(1),
+.product__container__button :nth-child(2){
   font-family: 'Lobster', cursive;
+  font-size: 15px;
 }
 .car__button {
   background-color: var(--rojo);
@@ -168,6 +195,7 @@ main h3 {
 .car__product__image {
   display: flex;
   justify-content: center;
+  margin-top: 40px;
 }
 .car__product__image img {
   width: 150px;
@@ -201,6 +229,7 @@ main h3 {
   border-radius: 20px;
   cursor: pointer;
   transition: 0.5s;
+  font-family: 'Lobster', cursive;
 }
 .car__product__button button:hover {
   transform: scale(1.1);
@@ -220,6 +249,7 @@ main h3 {
   margin-top: 30px;
   margin-bottom: 30px;
   border-radius: 20px;
+  font-family: 'Lobster', cursive;
 }
 .car__block .empty__button:hover {
   transform: translateY(-3px);
@@ -238,7 +268,7 @@ main h3 {
 .modal__container__element .close {
   display: flex;
   justify-content: flex-end;
-  color: var(--negro);
+  color: var(--blanco1);
   font-size: 24px;
 }
 .modal__container__element div i {
@@ -251,7 +281,7 @@ main h3 {
 }
 .show__modal {
   display: block;
-  background: linear-gradient(rgba(0,0,0,.3),rgba(243,17,224,.3)), url(https://i.pinimg.com/originals/0c/6e/11/0c6e115ab4fa93c88121afca729fae08.gif) center #505050;
+  background: linear-gradient(rgba(0,0,0,.3),rgba(243,17,224,.3)), url(https://media.tenor.com/DO1isGUGfmYAAAAd/tanjiro.gif) center #505050;
   background-size: cover;
 }
 .principal__element {
@@ -260,18 +290,24 @@ main h3 {
 }
 .first__modal__text p:first-child {
   font-size: 26px;
-  color: var(--negro);
+  color: var(--rgb);
+  margin-bottom: 20px;
+}
+.first__modal__text :nth-child(2) {
+  font-size: 26px;
+  color: var(--rgb);
   margin-bottom: 20px;
 }
 .first__modal__text p:last-child {
-  font-size: 28px;
-  color: var(--negro);
-  font-weight: 700;
+  font-size: 18px;
+  color: var(--rgb);
   margin-bottom: 20px;
+  width: 300px;
 }
 .first__modal__colors p {
   font-size: 18px;
   margin-bottom: 10px;
+  color: var(--rgb);
 }
 .first__modal__colors div {
   width: 110px;
@@ -291,12 +327,10 @@ main h3 {
   align-items: center;
   margin-bottom: 30px;
 }
-.first__modal__sizes__text div p:first-child {
-  font-size: 18px;
-}
-.first__modal__sizes__text div p:last-child {
-  font-size: 14px;
-  color: var(--negro);
+.first__modal__sizes__text div p {
+  font-size: 20px;
+  color: var(--rgb);
+
 }
 .first__modal__colors div img {
   width: 100px;
@@ -336,7 +370,7 @@ main h3 {
   right: 0;
 }
 .second__modal__section div {
-  /* background-color: var(--rojo); */
+  
   width: 200px;
   height: 400px;
   position: relative;
@@ -380,12 +414,14 @@ main h3 {
   .principal__element {
     flex-direction: column;
     margin: 0 20px;
+    margin-bottom: 20px;
   }
   .modal__container__element {
-    top: 10%;
+    top: 8%;
   }
   .first__modal__text p:first-child {
     margin-bottom: 10px;
+    font-size: 20px;
   }
   .first__modal__text p:last-child {
     margin-bottom: 10px;
@@ -397,16 +433,21 @@ main h3 {
     margin-bottom: 10px;
   }
   .second__modal__section {
-    display: flex;
-    justify-content: flex-end;
+
     margin-bottom: 10px;
   }
   .second__modal__section div {
     height: 320px;
+    
   }
   .second__modal__section img {
+    
     top: 0%;
     width: 320px;
+    
+  }
+  .first__modal__sizes button {
+    width: 35px;
   }
 }
 @media screen and (max-width: 450px){
@@ -419,4 +460,128 @@ main h3 {
   .modal__container__element {
     top: 7.9%;
   }
+  .first__modal__sizes button {
+    width: 30px;
+  }
+  .first__modal__text p:last-child {
+    font-size: 15px;
+  }
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+  .footer-social{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 415px){
+  .first__modal__text p:first-child {
+    font-size: 15px;
+  }
+  .first__modal__text :nth-child(2){
+    font-size: 15px;
+  }
+  .first__modal__text p:last-child {
+    font-size: 24px;
+  }
+  .first__modal__sizes__text {
+    margin-bottom: -20px;
+  }
+  .modal__container__element {
+    top: 7.9%;
+    margin-top: 20px;
+    height: 580px;
+    
+  }
+  .first__modal__sizes button {
+    justify-content: center;
+    width: 30px;
+    height: 30px;  
+  }
+  
+  .first__modal__colors div img {
+    width: 80px;
+  }
+  
+  .second__modal__section div {
+    display: none;
+    
+  }
+  .second__modal__section img {
+    width: 180px;
+    
+  }
+  .first__modal__sizes button p{
+    font-size: 10px;
+    
+  }
+  .first__modal__text p:last-child {
+    font-size: 12px;
+  }
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+  .footer-social{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 30px 0;
+}
+
+.container {
+  
+  margin: 20px;
+  margin-bottom: 30px;
+  padding: 0 15px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--blanco1);
+  font-size: 20px
+}
+
+
+.footer-social {
+  flex: 1 0 100px;
+  text-align: right;
+}
+
+.footer-social ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-social li {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 30px;
+}
+
+.footer-social a {
+  color: var(--blanco1);
+  text-decoration: none;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  color: var(--blanco1);
+  font-size: 20px
 }

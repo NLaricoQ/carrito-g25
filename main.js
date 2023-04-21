@@ -77,8 +77,11 @@ function printProducts(products){
         <p>$ ${products[i].price.toFixed(2)}</p>
       </div>
       <div class="product__container__button">
-        <button class="car__button add__to__car" id="add__to__car" data-id="${products[i].id}"><p>Agregar al carrito</p></button>
-        <button class="product__details" data-id="${products[i].id}"><p>Ver detalles</p></button>
+        <button class="car__button add__to__car" id="add__to__car" data-id="${products[i].id}">Agregar al carrito</button>
+        <button class="product__details" data-id="${products[i].id}">Ver detalles</button>
+      </div>
+      <div class="product__container__description" id="modal__description">
+        <p>${products[i].description}</p>
       </div>
     </div>
     `
@@ -88,7 +91,7 @@ function printProducts(products){
 //* Agregar productos al carrito
 //* 1. Capturar la información del producto al que se le dé click.
 function addProduct(event){
-  if(event.target.classList.contains('add__to__car')){
+  if(event.target.classList.contains('car__button')){
     //.contains valida si el elemento existe dentro de la clase
     const product = event.target.parentElement.parentElement
     // parentElement nos ayuda a acceder al padre inmediatamente superior del elemento.
@@ -181,7 +184,7 @@ function emptyCar() {
   carElementsHTML();
 }
 
-//* Ventana Modal
+//* Modal
 function modalProduct(event){
   if(event.target.classList.contains('product__details')){
     modalContainer.classList.add('show__modal')
@@ -204,6 +207,7 @@ function modalDetailsElement(product){
     image: product.querySelector('img').src,
     name: product.querySelector('.product__container__name p').textContent,
     price: product.querySelector('.product__container__price p').textContent,
+    description: product.querySelector('#modal__description p').textContent,
   }]
   modalDetails = [...infoDetails]
   modalHTML();
@@ -220,16 +224,17 @@ function modalHTML() {
           <div class="first__modal__text">
             <p>${element.name}</p>
             <p>${element.price}</p>
+            <p>${element.description}</p>
           </div>
           <div class="first__modal__colors">
-            <p>Colors</p>
+            <p>Colores</p>
             <div>
               <img src="${element.image}">
             </div>
           </div>
           <div class="first__modal__sizes__text">
             <div>
-              <p>Sizes</p>
+              <p>Tallas</p>
             </div>
           </div>
           <div class="first__modal__sizes">
@@ -247,14 +252,11 @@ function modalHTML() {
             </button>
             <button>
               <p>2XL</p>
-            </button>
-            <button>
-              <p>3XL</p>
-            </button>
+            </button>           
           </div>
         </div>
         <div class="second__modal__section">
-          <div class="modal__vector"></div>
+          <div class ="modal_vector"></div>
           <img src="${element.image}">
           
         </div>
