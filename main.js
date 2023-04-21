@@ -222,7 +222,7 @@ function modalHTML() {
             <p>${element.price}</p>
           </div>
           <div class="first__modal__colors">
-            <p>Colores</p>
+            <p>Colors</p>
             <div>
               <img src="${element.image}">
             </div>
