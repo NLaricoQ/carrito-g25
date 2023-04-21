@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <title>E-Commerce NELSON</title>
+  </head>
+  <body>
+    <nav>
+      <img src="./images/logo_nombre.png" alt="logo_nombre">
+      <button class="car__toggle">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </button>
+      <!-- Panel Carrito de Compras  -->
+      <div class="car__block" id="car">
+        <div id="car__list">
+          
+        </div>
+        <button class="empty__button" id="empty__cart">Vaciar carrito</button>
+      </div>
+    </nav>
+    <header>
+      <img src="./images/logo blanco.png" alt="logo_header">
+    </header>
+    <hr>
+    <main>
+      <h3>Todos nuestros productos</h3>
+      <!-- Lista de productos -->
+      <div id="products-container" class="principal__container">
+        
+      </div>
+      <!-- Modal -->
+      <div id="modal-container" class="modal__container__element">
+        <div class="close">
+          <i class="fa-solid fa-x icon__modal"></i>
+        </div>
+        <div id="modal" class="modal__element">
+
+        </div>
+      </div>
+      
+    </main>
+
+    <script src="https://kit.fontawesome.com/7acc2715e4.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

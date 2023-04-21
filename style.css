@@ -1,0 +1,422 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --rojo: #EB4A5A;
+  --blanco1: #F9FAFC;
+  --blanco2: #F6F3F3;
+  --negro: #434343;
+  --azul: #274671;
+  --rgb: rgb(250, 236, 236);
+}
+body {
+  font-family: 'Lobster', cursive;
+  /* background: linear-gradient(rgba(0,0,0,.3),rgba(243,17,224,.3)), url(https://www.coliseugeek.com.br/wp-content/uploads/2023/01/59f27-clickwallpapers-demonslayerkimetsunoyaiba-anime-4k-img1-scaled.jpg) center #505050; */
+  background: linear-gradient(rgba(0,0,0,.3),rgba(243,17,224,.3)), url(https://i.pinimg.com/originals/0c/6e/11/0c6e115ab4fa93c88121afca729fae08.gif) center #505050;
+  background-size: cover;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  position: fixed;
+  width: 100%;
+  background-color: var(--rgb);
+  border-bottom: solid 1px var(--negro);
+  z-index: 10;
+
+}
+nav img {
+  height: 55px;
+}
+nav button {
+  background-color: transparent;
+  border: none;
+}
+nav button i {
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--negro);
+  transition: 0.5s;
+}
+nav button i:hover {
+  font-size: 28px;
+}
+header {
+  height: 350px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+header img {
+  height: 200px;
+  margin-top: 60px;
+}
+.car__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 40px;
+  background-color: var(--blanco2);
+  position: fixed;
+  height: 85%;
+  top: 65px;
+  width: 40%;
+  overflow-y: scroll;
+  transition: 0.5s;
+  box-shadow: 5px 10px 20px 0px var(--negro);
+  left: 100%;
+  background: linear-gradient(rgba(0,0,0,.3),rgba(243,17,224,.3)), url(https://aniyuki.com/wp-content/uploads/2021/06/aniyuki-gif-demon-slayer-38.gif) center #505050;
+  background-size: cover;
+}
+
+.nav__car__visible {
+  left: 60%;
+  background: linear-gradient(rgba(0,0,0,.3),rgba(243,17,224,.3)), url(https://w0.peakpx.com/wallpaper/407/869/HD-wallpaper-thunder-struck-beach-lightning-nature-paper-storm-strike-wall.jpg) center #505050;
+  background-size: cover;
+}
+main h3 {
+  margin: 40px;
+  margin-top: -10px;
+  font-size: 26px;
+  color: var(--rgb);
+  padding-top: 40px;
+}
+.principal__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin: 60px 40px;
+}
+.product__container {
+  max-width: 300px;
+  height: 100%;
+  transition: all 0.25s;
+}
+.product__container:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 5px 20px 2px var(--negro);
+}
+.product__container__img img {
+  max-width: 290px;
+}
+.product__container__name {
+  margin-bottom: 20px;
+}
+.product__container__name p {
+  width: 200px;
+  padding-left: 20px;
+  font-size: 18px;
+  color: var(--rgb);
+}
+.product__container__price {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+.product__container__price p {
+  font-size: 20px;
+  font-weight: bold;
+  padding-right: 20px;
+}
+.product__container__button {
+  padding-left: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;  
+}
+.product__container__button p{
+  font-family: 'Lobster', cursive;
+}
+.car__button {
+  background-color: var(--rojo);
+  padding: 8px;
+  color: var(--blanco2);
+  width: 100px;
+  border-radius: 20px;
+  border: solid 1px var(--blanco1);
+  cursor: pointer;
+  transition: 0.5s;
+}
+.product__details {
+  background-color: var(--azul);
+  padding: 8px;
+  color: var(--blanco2);
+  width: 100px;
+  border-radius: 20px;
+  border: solid 1px var(--blanco1);
+  cursor: pointer;
+  transition: 0.5s;
+  margin-right: 20px;
+}
+.car__button:hover {
+  transform: translateY(-3px);
+}
+.product__details:hover {
+  transform: translateY(-3px);
+}
+.car__product__image {
+  display: flex;
+  justify-content: center;
+}
+.car__product__image img {
+  width: 150px;
+  height: 150px;
+}
+.car__product__description p:nth-child(1){
+  font-weight: 700;
+  margin: 10px 20px;
+  color: var(--rgb);
+}
+.car__product__description p:nth-child(2) {
+  margin: 10px 20px;
+  font-weight: 300;
+  color: var(--blanco1);
+}
+.car__product__description p:nth-child(3) {
+  margin: 10px 20px;
+  font-weight: 300;
+  color: var(--blanco1);
+}
+.car__product__button {
+  display: flex;
+  justify-content: flex-end;
+}
+.car__product__button button {
+  background-color: var(--rojo);
+  height: 30px;
+  width: 80px;
+  color: var(--blanco1);
+  margin: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.car__product__button button:hover {
+  transform: scale(1.1);
+}
+.car__block hr {
+  border: none;
+  height: 1px;
+  background-color: var(--negro);
+}
+.car__block .empty__button {
+  width: 150px;
+  background-color: var(--azul);
+  color: var(--blanco2);
+  cursor: pointer;
+  transition: 0.5s;
+  min-height: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+}
+.car__block .empty__button:hover {
+  transform: translateY(-3px);
+}
+.modal__container__element {
+  background-color: var(--blanco2);
+  width: 85%;
+  max-width: 1000px;
+  min-height: 65%;
+  position: fixed;
+  top: 13%;
+  left: 20%;
+  box-shadow: 0px 10px 20px 8px var(--negro);
+  display: none;
+}
+.modal__container__element .close {
+  display: flex;
+  justify-content: flex-end;
+  color: var(--negro);
+  font-size: 24px;
+}
+.modal__container__element div i {
+  margin: 10px 20px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.modal__container__element div i:hover {
+  transform: rotate(90deg);
+}
+.show__modal {
+  display: block;
+  background: linear-gradient(rgba(0,0,0,.3),rgba(243,17,224,.3)), url(https://i.pinimg.com/originals/0c/6e/11/0c6e115ab4fa93c88121afca729fae08.gif) center #505050;
+  background-size: cover;
+}
+.principal__element {
+  display: flex;
+  justify-content: space-around;
+}
+.first__modal__text p:first-child {
+  font-size: 26px;
+  color: var(--negro);
+  margin-bottom: 20px;
+}
+.first__modal__text p:last-child {
+  font-size: 28px;
+  color: var(--negro);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.first__modal__colors p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.first__modal__colors div {
+  width: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 40px;
+  
+}
+.first__modal__colors div:hover {
+  border: solid 1px var(--azul);
+}
+.first__modal__sizes__text div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.first__modal__sizes__text div p:first-child {
+  font-size: 18px;
+}
+.first__modal__sizes__text div p:last-child {
+  font-size: 14px;
+  color: var(--negro);
+}
+.first__modal__colors div img {
+  width: 100px;
+}
+.first__modal__sizes {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.first__modal__sizes button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-bottom: 40px;
+}
+.first__modal__sizes button:hover {
+  border: solid 1px var(--azul);
+  transform: scale(1.1);
+}
+.second__modal__section {
+  position: relative;
+  z-index: 1;
+}
+.first__modal__sizes button p {
+  font-size: 18px;
+  color: var(--negro);
+  cursor: pointer;
+}
+.second__modal__section img {
+  width: 350px;
+  position: absolute;
+  top: 10%;
+  right: 0;
+}
+.second__modal__section div {
+  /* background-color: var(--rojo); */
+  width: 200px;
+  height: 400px;
+  position: relative;
+  
+}
+@media screen and (max-width: 1550px){
+  .modal__container__element {
+    left: 15%;
+  }
+}
+@media screen and (max-width: 1300px){
+  .modal__container__element {
+    left: 9%;
+  }
+}
+@media screen and (max-width: 992px){
+  .first__modal__sizes__text {
+    max-width: 300px;
+  }
+  .first__modal__sizes {
+    max-width: 300px;
+    gap: 20px;
+  }
+  .first__modal__sizes div {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 768px){
+  .car__block {
+    width: 70%;
+  }
+  .nav__car__visible {
+    left: 30%;
+  }
+  .first__modal__sizes__text {
+    max-width: 100%;
+  }
+  .first__modal__sizes {
+    max-width: 100%;
+  }
+  .principal__element {
+    flex-direction: column;
+    margin: 0 20px;
+  }
+  .modal__container__element {
+    top: 10%;
+  }
+  .first__modal__text p:first-child {
+    margin-bottom: 10px;
+  }
+  .first__modal__text p:last-child {
+    margin-bottom: 10px;
+  }
+  .first__modal__colors div {
+    margin-bottom: 10px;
+  }
+  .first__modal__sizes__text div {
+    margin-bottom: 10px;
+  }
+  .second__modal__section {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+  }
+  .second__modal__section div {
+    height: 320px;
+  }
+  .second__modal__section img {
+    top: 0%;
+    width: 320px;
+  }
+}
+@media screen and (max-width: 450px){
+  .first__modal__text p:first-child {
+    font-size: 22px;
+  }
+  .first__modal__text p:last-child {
+    font-size: 24px;
+  }
+  .modal__container__element {
+    top: 7.9%;
+  }
+}
